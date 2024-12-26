@@ -4,10 +4,10 @@ import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
   return (
-    <div className={s.content}>
+    <div>
       <div>
         <img
-          src="https://printwalls.ru/assets/cache_image/products/2309/fotooboi-priroda-lesa-kupit-0149_846x550_c8f.jpg"
+          src="http://printwalls.ru/assets/cache_image/products/2309/fotooboi-priroda-lesa-kupit-0149_846x550_c8f.jpg"
           alt="wallpaper"
         />
       </div>
