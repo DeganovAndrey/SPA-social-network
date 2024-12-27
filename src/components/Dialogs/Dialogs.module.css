@@ -14,10 +14,6 @@ a {
   padding: 10px;
 }
 
-.dialogsItems {
-  padding: 10px;
-}
-
 .dialogs .active {
   color: gold;
 }
@@ -25,6 +21,9 @@ a {
 .messages .message {
   color: white;
 }
-
-.dialog {
+.dialogsItems {
+  padding: 10px;
+}
+.dialogsItems .active {
+  color: gold;
 }
