@@ -18,11 +18,12 @@ a {
   padding: 10px;
 }
 
-/* .dialogItems .active {
+.dialogs .active {
   color: gold;
-} */
+}
 
-.message {
+.messages .message {
+  color: white;
 }
 
 .dialog {
