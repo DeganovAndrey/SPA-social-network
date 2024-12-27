@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="profile"
-          className={({ isActive }) => (isActive ? "activeLink" : "link")}
+          // className={({ isActive }) => (isActive ? "activeLink" : "link")}
           style={({ isActive }) =>
             isActive ? { color: "gold", textDecoration: "none" } : {}
           }
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="dialogs"
-          className={({ isActive }) => (isActive ? "activeLink" : "link")}
+          // className={({ isActive }) => (isActive ? "activeLink" : "link")}
           style={({ isActive }) =>
             isActive ? { color: "gold", textDecoration: "none" } : {}
           }
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="news"
-          className={({ isActive }) => (isActive ? "activeLink" : "link")}
+          // className={({ isActive }) => (isActive ? "activeLink" : "link")}
           style={({ isActive }) =>
             isActive ? { color: "gold", textDecoration: "none" } : {}
           }
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="music"
-          className={({ isActive }) => (isActive ? "activeLink" : "link")}
+          // className={({ isActive }) => (isActive ? "activeLink" : "link")}
           style={({ isActive }) =>
             isActive ? { color: "gold", textDecoration: "none" } : {}
           }
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink
           to="settings"
-          className={({ isActive }) => (isActive ? "activeLink" : "link")}
+          // className={({ isActive }) => (isActive ? "activeLink" : "link")}
           style={({ isActive }) =>
             isActive ? { color: "gold", textDecoration: "none" } : {}
           }
