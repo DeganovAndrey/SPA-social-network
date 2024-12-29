@@ -3,15 +3,16 @@ import s from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const styleActive = ({ isActive }) =>
+    isActive ? { color: "gold", textDecoration: "none" } : {};
+
   return (
     <nav className={s.nav}>
       <div className={s.item}>
         <NavLink
           to="profile"
           // className={({ isActive }) => (isActive ? "activeLink" : "link")}
-          style={({ isActive }) =>
-            isActive ? { color: "gold", textDecoration: "none" } : {}
-          }
+          style={styleActive}
         >
           Profile
         </NavLink>
@@ -21,9 +22,7 @@ const Navbar = () => {
         <NavLink
           to="dialogs"
           // className={({ isActive }) => (isActive ? "activeLink" : "link")}
-          style={({ isActive }) =>
-            isActive ? { color: "gold", textDecoration: "none" } : {}
-          }
+          style={styleActive}
         >
           Messages
         </NavLink>
@@ -33,9 +32,7 @@ const Navbar = () => {
         <NavLink
           to="news"
           // className={({ isActive }) => (isActive ? "activeLink" : "link")}
-          style={({ isActive }) =>
-            isActive ? { color: "gold", textDecoration: "none" } : {}
-          }
+          style={styleActive}
         >
           News
         </NavLink>
@@ -45,9 +42,7 @@ const Navbar = () => {
         <NavLink
           to="music"
           // className={({ isActive }) => (isActive ? "activeLink" : "link")}
-          style={({ isActive }) =>
-            isActive ? { color: "gold", textDecoration: "none" } : {}
-          }
+          style={styleActive}
         >
           Music
         </NavLink>
@@ -57,12 +52,15 @@ const Navbar = () => {
         <NavLink
           to="settings"
           // className={({ isActive }) => (isActive ? "activeLink" : "link")}
-          style={({ isActive }) =>
-            isActive ? { color: "gold", textDecoration: "none" } : {}
-          }
+          style={styleActive}
         >
           Settings
         </NavLink>
+        <div className={s.item}>
+          <NavLink to="friends" style={styleActive}>
+            Friends
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
