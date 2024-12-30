@@ -1,3 +1,8 @@
+const ADD_POST = "ADD-POST";
+const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+const ADD_MESSAGE = "ADD-MESSAGE";
+const UPDATE_NEW_MESSAGE_TEXT = "UPDATE-NEW-MESSAGE-TEXT";
+
 let store = {
   _state: {
     profilePage: {
@@ -14,7 +19,7 @@ let store = {
         { id: 3, message: "How much this table?" },
         { id: 4, message: "How are is your name?" },
       ],
-      newMessageText: "HALO",
+      newMessageText: "",
       dialogs: [
         { id: 1, name: "Andrey" },
         { id: 2, name: "Pavel" },
@@ -65,6 +70,18 @@ let store = {
     }
   },
 };
+
+export const addPostActionCreator = () => ({ type: ADD_POST });
+export const updateNewPostTextActionCreator = (text) => ({
+  type: UPDATE_NEW_POST_TEXT,
+  newText: text,
+});
+
+export const addMessageActionCreator = () => ({ type: ADD_MESSAGE });
+export const updateNewMessageActionCreator = (letter) => ({
+  type: UPDATE_NEW_MESSAGE_TEXT,
+  newLetter: letter,
+});
 
 window.store = store;
 export default store;
