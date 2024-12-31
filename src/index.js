@@ -6,14 +6,19 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 let rerenderEntireTree = (state) => {
-  const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(
-    <BrowserRouter>
-      <React.StrictMode>
-        <App state={state} dispatch={store.dispatch.bind(store)} />
-      </React.StrictMode>
-    </BrowserRouter>
+    <React.StrictMode>
+      <BrowserRouter>
+        <App
+          state={state}
+          dispatch={store.dispatch.bind(store)}
+          store={store}
+        />
+      </BrowserRouter>
+    </React.StrictMode>
   );
 };
 
