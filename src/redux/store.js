@@ -29,6 +29,9 @@ let store = {
     },
     sidebar: {},
   },
+
+  _callSubscriber() {},
+
   getState() {
     return this._state;
   },
